@@ -1,0 +1,17 @@
+/*Parte de la cabezera que tendrá el mismo estilo en el index.html y en el landing.html*/
+.header1{
+    width: 100%;
+	background: #014983;
+	padding: 5px 0;
+	text-align: center;
+    border-bottom: 4px solid #ffc90b;
+}
+
+.logo{
+    width: 138.08px;
+    height: 60px;    
+    vertical-align: middle;
+    background: transparent;
+}
+
+

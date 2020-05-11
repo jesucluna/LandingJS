@@ -1,0 +1,110 @@
+/*El Home.js y el Landing.js comparten la misma hoja de estilos*/
+/*Parte general de la pagina para ambos componentes*/
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+/*Parte "section" del index.html donde edito la forma*/
+.main{
+    width: 100%;
+    background: rgb(0, 0, 0);
+    height: 460px;
+    margin-left:auto;
+    margin-right:auto;
+    display: flex;
+}
+
+.banner{
+    /*Banner con un fondo sin elementos que ocupa toda la pantalla, se edita la forma*/
+    width: 100%;
+    height: 460px;
+    background: url(../images/guason-preventa.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    justify-content: center;
+}
+
+/*Se cambia la forma del fondo del banner del index.html cuando cambia el tamaño*/
+@media (max-width:687px){
+    .banner{
+        background: url(../images/guason.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+    } 
+}
+
+/*Parte del Landing.js*/
+
+section{
+    height: auto;
+    padding-top: 20px;
+    overflow: hidden;
+    background: url(../images/guason-preventa1.jpg);
+    background-repeat: no-repeat;
+    justify-content: center;
+}
+aside{
+    overflow: hidden;
+    height: 460px;
+    padding-top: 5%;
+    background: rgb(0, 0, 0);
+
+}
+
+p{
+    font-family: 'Grenze', serif;
+    font-size: x-large;
+    color: #ffc90b;
+}
+b{
+    color: aliceblue;
+}
+
+b:hover{
+    color: #ffc90b;
+    cursor:cell;
+}
+a, label, input, button{
+    font-family: 'Grenze', serif;
+    font-size: 17px;
+    color: aliceblue;
+}
+
+.hola{
+    background: transparent;
+}
+
+@media (max-width:853px){
+    section{
+        width: 100%;
+        height: 400px;
+        background: url(../images/guason.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+    aside{
+        width: 100%;
+        height: auto;
+    }
+}
+@media (max-width:767px){
+    section{
+        background: url(../images/guason-preventa1.jpg);
+        background-repeat: no-repeat;
+    }
+    aside{
+        padding-top: 0%;
+    }
+    .main{
+        display: block;
+    }
+    
+}@media (max-width:403px){
+    section{
+        background: url(../images/guason.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+
+    }
+}
